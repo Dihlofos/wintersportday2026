@@ -1,0 +1,36 @@
+.logos {
+  display: flex;
+  gap: 1rem;
+  width: 36rem;
+  justify-content: space-between;
+
+  &--red {
+    width: auto;
+    padding: 2rem;
+    background-color: $red;
+    border-radius: 19px;
+    align-items: center;
+    gap: 3.14rem;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $white;
+    transition: color 0.2s ease;
+
+
+
+    &:hover {
+      @media(min-width: 1025px) {
+        color: $red;
+      }
+
+    }
+
+    .logos--red &:hover {
+      color: $white;
+    }
+  }
+}

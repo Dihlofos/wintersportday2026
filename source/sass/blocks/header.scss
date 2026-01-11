@@ -1,0 +1,106 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 60;
+  padding: 3.5rem 0 0;
+
+  @media (max-width: $tablet) {
+    padding: 2.4rem 0 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding-bottom: 2.2rem;
+  }
+
+  .mobile-logo {
+    display: none;
+
+    @media (max-width: $tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+
+  .container {
+    max-width: 116rem;
+  }
+
+  &__nav {
+    position: relative;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  &__logos {
+    position: relative;
+    display: flex;
+    gap: 2.2rem;
+    z-index: 2;
+
+    @media (max-width: $tablet) {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 1.5rem;
+      background-color: $red;
+      border-radius: 19px;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 1.8rem;
+      padding: 1.7rem 1.5rem 1.7rem 1.4rem;
+      border-radius: 12px;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    transition: 0.2s color ease-in;
+    padding: 0 1.9rem;
+    height: 8.2rem;
+    border-radius: 19px;
+    background-color: $red;
+
+    img {
+      width: 8rem;
+    }
+
+    @media (max-width: $tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      background: none;
+      border-radius: 0;
+      padding: 0;
+
+      svg,img {
+        height: 3rem;
+        width: auto;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      svg,img {
+        height: 1.8rem;
+      }
+
+    }
+
+  }
+
+
+}

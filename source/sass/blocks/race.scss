@@ -1,0 +1,147 @@
+.race {
+  padding: 7rem 0 10rem;
+
+  @media (max-width: $tablet) {
+    padding: 3rem 0 4rem;
+  }
+
+
+
+  &__box {
+    position: relative;
+    border-radius: 19px;
+    background-color: $green;
+    overflow: hidden;
+
+    @media (max-width: $mobile) {
+      border-radius: 12px;
+    }
+  }
+
+  &__texture-vertical {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32rem;
+    height: 100%;
+    background-image: url(../img/texture-vertical.png);
+    background-size: 49rem;
+    background-position: -17rem 0;
+    border-bottom-left-radius: 19px;
+    z-index: 1;
+
+    @media (max-width: $tablet) {
+      top: auto;
+      bottom: 0;
+      height: 27rem;
+      width: 100%;
+      background-image: url(../img/texture.png);
+      background-repeat: repeat;
+      background-position: 0 38.7rem;
+      border-top-left-radius: 19px;
+      border-top-right-radius: 19px;
+      background-size: 38.2rem;
+    }
+
+    @media (max-width: $mobile) {
+      transform: rotate(180deg);
+      height: 17rem;
+      width: 100%;
+      background-image: url(../img/texture.png);
+      background-repeat: repeat;
+      background-position: 0 16.7rem;
+      border-top-left-radius: 19px;
+      border-top-right-radius: 19px;
+      background-size: 34.2rem;
+    }
+  }
+
+  &__title {
+    margin: 0 0 5rem;
+
+    @media (max-width: $mobile) {
+      margin: 0px 0 3.5rem;
+    }
+  }
+
+  &__box-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    gap: 4rem;
+
+    @media (max-width: $tablet) {
+      padding: 2.5rem;
+      padding-bottom: 30rem;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 2.1rem 2.2rem 24.5rem;
+    }
+  }
+
+  &__box-left {
+    padding-left: 9.8rem;
+    padding-top: 4.9rem;
+    flex-shrink: 0;
+    align-self: flex-end;
+    pointer-events: none;
+
+    @media (max-width: $tablet) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 60%;
+    }
+
+    @media (max-width: $mobile) {
+      width: 29rem;
+      bottom: -0.3rem;
+      right: 2.5rem;
+      padding: 0;
+
+    }
+  }
+
+  &__box-right {
+    padding-top: 5.8rem;
+    padding-right: 5rem;
+    font-size: 2.2rem;
+    line-height: 110%;
+    font-family: $monserrat;
+
+    p {
+      margin: 0 0 3rem;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 0;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+      padding-right: 4rem;
+      line-height: 1;
+
+      p {
+        margin: 0 0 1rem;
+      }
+    }
+  }
+
+  &__button {
+    border-radius: 17px;
+    margin-top: 0.5rem;
+    padding: 1.4rem 1.7rem;
+
+    @media (max-width: $tablet) {
+      border-radius: 6px;
+      width: auto;
+    }
+
+    @media (max-width: $mobile) {
+      margin-top: 1.2rem;
+    }
+  }
+
+}

@@ -1,0 +1,100 @@
+.partners {
+  &__texture {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    user-select: none;
+    pointer-events: none;
+    height: 25rem;
+    width: 100%;
+    background-image: url(../img/texture.png);
+    background-repeat: repeat;
+    background-position: -0.2rem 58.7rem;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    background-size: 58.2rem;
+    z-index: 5;
+
+    @media (max-width: $mobile) {
+      height: 14rem;
+      width: 100%;
+      background-image: url(../img/texture.png);
+      background-repeat: repeat;
+      background-position: -0.4rem 36rem;
+      border-top-left-radius: 19px;
+      border-top-right-radius: 19px;
+      background-size: 35.2rem;
+    }
+  }
+
+  &__block:not(:last-child) {
+    margin: 0 0 10.7rem;
+  }
+
+  &__title {
+    margin: 0 0 7.7rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 2.4rem;
+    }
+  }
+
+  &__box {
+    position: relative;
+    overflow: hidden;
+    background-color: $green;
+    border-radius: 19px;
+    padding: 8rem 5.7rem 31.6rem 9.9rem;
+
+    @media (max-width: $tablet) {
+      border-radius: 17px;
+      padding: 2.4rem 1.7rem 30rem 2.3rem;
+    }
+
+    @media (max-width: $mobile) {
+      border-radius: 12px;
+      padding: 2.4rem 1.7rem 14.8rem 2.3rem;
+    }
+
+  }
+
+  .logos {
+    width: 100%;
+    justify-content: center;
+    gap: 6.2rem;
+    padding-right: 3.5rem;
+    flex-wrap: wrap;
+    max-width: 90rem;
+    margin: 0 auto;
+
+    @media (max-width: $mobile) {
+      padding: 0;
+      gap: 2rem;
+
+      &__logo {
+        width: 32%;
+      }
+
+    }
+
+
+  }
+
+  &__decor {
+    position: absolute;
+    z-index: 2;
+
+    &--top {
+      top: 0rem;
+      right: 0rem;
+    }
+
+    &--bottom {
+      bottom: 2.8rem;
+      left: 0rem;
+    }
+  }
+
+
+
+}

@@ -1,0 +1,228 @@
+.retro {
+  padding: 19.7rem 0 7.1rem;
+  font-family: $monserrat;
+
+  @media (max-width: $laptop) {
+    padding-top: 10rem;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 11rem 0 1rem;
+  }
+
+  &__box {
+    position: relative;
+    overflow: hidden;
+    background-color: $darkGreen;
+    border-radius: 19px;
+    padding: 9.2rem 5.7rem 8.7rem 9.9rem;
+
+    @media (max-width: $tablet) {
+      padding: 5.2rem 2.7rem 7.7rem 2.9rem;
+      border-radius: 12px;
+    }
+
+    @media (max-width: $mobile) {
+      border-radius: 12px;
+      padding: 2rem 2.2rem 31rem;
+    }
+  }
+
+  &__texture {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    user-select: none;
+    pointer-events: none;
+    height: 34rem;
+    width: 100%;
+    background-image: url('../img/texture.png');
+    background-repeat: repeat;
+    background-position: 0px 57.7rem;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    background-size: 58.2rem;
+    z-index: 1;
+
+    @media (max-width: $mobile) {
+      height: 27rem;
+      width: 100%;
+      background-image: url(../img/texture.png);
+      background-repeat: repeat;
+      background-position: -54rem 36.7rem;
+      border-top-left-radius: 19px;
+      border-top-right-radius: 19px;
+      background-size: 36.2rem;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    max-height: 50rem;
+    width: auto;
+
+    @media (max-width: $tablet) {
+      width: 47%;
+    }
+
+    @media (max-width: $mobile) {
+      width: auto;
+      max-height: 31rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &.desktop {
+      display: block;
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+
+    &.mobile {
+      display: none;
+
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    gap: 5.8rem;
+    z-index: 3;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+  }
+
+  &__left {
+    width: 28.5rem;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin: -1rem 0 5rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 3.6rem;
+    }
+  }
+
+  &__text {
+    font-size: 2.2rem;
+    line-height: 1.1;
+
+    p {
+      margin: 0;
+    }
+
+    p:not(:last-child) {
+      margin: 0 0 2.7rem
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+
+      p:not(:last-child) {
+        margin: 0 0 0.8rem
+      }
+    }
+  }
+
+  &__table {
+    background-color: $red;
+    border-radius: 19px;
+    flex-grow: 1;
+    padding: 0 3.5rem 1.7rem 3rem;
+
+    @media (max-width: $mobile) {
+      border-radius: 12px;
+      padding: 0 1.1rem 1.3rem 1.3rem;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 3.9rem;
+    font-size: 2.2rem;
+    padding: 2.7rem 0 2rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $white;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+      line-height: 1.1;
+      padding: 1.7rem 0 1.6rem;
+      gap: 2.1rem;
+    }
+  }
+
+  &__time {
+    font-family: $mossport;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 1.01;
+
+    @media (max-width: $mobile) {
+      font-size: 2.1rem;
+    }
+  }
+
+  &__table-cell {
+    padding-top: 1.7rem;
+
+    @media (max-width: $mobile) {
+      padding-top: 0.5rem;
+    }
+
+    img {
+      border-radius: 19px;
+
+      @media (max-width: $mobile) {
+        border-radius: 12px;
+        max-width: 11.8rem;
+      }
+    }
+  }
+
+  &__table-cell-text {
+    &:not(:last-child) {
+      margin: 0 0 2rem;
+
+      @media (max-width: $mobile) {
+        margin: 0 0 1rem;
+      }
+    }
+  }
+
+  &__button {
+    border-radius: 17px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    &:hover {
+      background-color: $darkGreen !important;
+    }
+
+    @media (max-width: $mobile) {
+      height: auto;
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+    }
+  }
+}

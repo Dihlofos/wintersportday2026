@@ -1,0 +1,113 @@
+.downhill {
+  padding: 7rem 0 10rem;
+
+  @media (max-width: $mobile) {
+    padding: 0 0 7.2rem;
+  }
+
+  &__title {
+    margin: 0 0 5rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 3.2rem;
+    }
+  }
+
+  &__box {
+    position: relative;
+    border-radius: 19px;
+    background-color: $darkGreen;
+    overflow: hidden;
+
+    @media (max-width: $mobile) {
+      border-radius: 12px;
+    }
+  }
+
+  &__texture-vertical {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 26rem;
+    height: 100%;
+    background-image: url(../img/texture-vertical.png);
+    background-size: 41rem;
+    background-position: -14.5rem 0;
+    border-bottom-left-radius: 19px;
+    transform: rotate(180deg);
+    z-index: 1;
+
+    @media (max-width: $mobile) {
+      top: auto;
+      bottom: 0;
+      transform: rotate(180deg);
+      height: 17rem;
+      width: 100%;
+      background-image: url(../img/texture.png);
+      background-repeat: repeat;
+      background-position: 0 16.7rem;
+      border-top-left-radius: 19px;
+      border-top-right-radius: 19px;
+      background-size: 34.2rem;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+
+    @media (max-width: $laptop) {
+      width: 45%;
+    }
+
+    @media (max-width: $mobile) {
+      width: 31.2rem;
+    }
+  }
+
+  &__content {
+    padding: 5.8rem 0 8rem 9.8rem;
+    font-size: 2.2rem;
+    line-height: 110%;
+    font-family: $monserrat;
+    max-width: 51.2rem;
+
+
+
+    @media (max-width: $tablet) {
+      padding: 3.8rem 0 6rem 3.8rem;
+      max-width: 35.2rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+      padding: 2.1rem 8rem 21rem 2.1rem;
+    }
+
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin: 0 0 3rem;
+
+        @media (max-width: $mobile) {
+          margin: 0 0 1rem;
+        }
+      }
+    }
+  }
+
+  &__button {
+    position: relative;
+    border-radius: 17px;
+    margin-top: 2rem;
+    padding: 1.4rem 1.7rem;
+    z-index: 5;
+
+    @media (max-width: $tablet) {
+      border-radius: 6px;
+      width: auto;
+    }
+  }
+}

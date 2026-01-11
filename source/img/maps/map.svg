@@ -1,0 +1,20 @@
+<svg class="map__scheme" width="1522" height="836" viewBox="0 0 1522 836" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group 37584">
+    <g id="figure 1" class="figure figure_1">
+      <rect id="Rectangle 378" x="635.109" y="139.117" width="42.2886" height="101.766" fill="#0B5729" stroke="white" stroke-width="4.2342"/>
+      <path id="1" d="M654.449 186.742V185.048H656.989V196.904H655.211V186.742H654.449Z" fill="white"/>
+    </g>
+    <g id="figure 2" class="figure figure_2">
+      <rect id="Rectangle 378_2" x="476.117" y="320.117" width="67.7658" height="78.7658" fill="#0B5729" stroke="white" stroke-width="4.2342"/>
+      <path id="2" d="M511.785 353.433V356.278L508.736 362.291V362.816H511.785V364.51H506.958V362.054L510.007 356.041V354.347H508.736V356.041H506.958V353.433C506.958 352.976 507.263 352.654 507.737 352.654H511.006C511.48 352.654 511.785 352.976 511.785 353.433Z" fill="white"/>
+    </g>
+    <g id="figure 3" class="figure figure_3">
+      <rect id="Rectangle 378_3" x="348.117" y="473.117" width="99.7658" height="46.7658" rx="23.3829" fill="#0B5729" stroke="white" stroke-width="4.2342"/>
+      <path id="3" d="M398.729 503.205H395.46C394.986 503.205 394.681 502.883 394.681 502.425V499.309H396.459V501.511H397.729V497.311H395.951V495.735L397.56 493.043H394.765V491.349H399.423V492.873L397.797 495.617H398.729C399.203 495.617 399.508 495.939 399.508 496.396V502.425C399.508 502.883 399.203 503.205 398.729 503.205Z" fill="white"/>
+    </g>
+    <g id="figure 4" class="figure figure_4">
+      <rect id="Rectangle 378_4" x="336.117" y="553.117" width="184.766" height="58.7658" fill="#0B5729" stroke="white" stroke-width="4.2342"/>
+      <path id="4" d="M428.879 587.958H427.101V585.757H424.137V584.232L426.474 576.103H428.337L426.051 584.063H427.101V582.539L428.879 582.2V584.063H429.556V585.757H428.879V587.958Z" fill="white"/>
+    </g>
+  </g>
+</svg>

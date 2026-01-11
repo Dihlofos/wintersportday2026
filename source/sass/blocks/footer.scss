@@ -1,0 +1,365 @@
+.footer {
+  padding: 8.2rem 0 47.1rem;
+  font-family: $monserrat;
+
+  @media (max-width: $mobile) {
+    padding: 4.4rem 0 22.1rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;
+
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .logos {
+    padding: 2rem 2.5rem 2rem 2.2rem;
+
+    @media (max-width: $tablet) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      background-color: $darkRed;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 1.2rem 1.2rem 1.3rem 1rem;
+      gap: 1.3rem;
+      border-radius: 12px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+
+
+
+
+  &__title {
+    margin: 0;
+
+    @media (max-width: $tablet) {
+      margin: 2rem 0 0;
+    }
+
+    @media (max-width: $tablet) {
+      margin: 1rem 0 0;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &--policies {
+      margin-top: -4.9rem;
+    }
+
+    &--title {
+      margin: 0 0 8rem;
+
+      @media (max-width: $tablet) {
+        margin: 0 0 5rem;
+      }
+
+      .footer__right {
+        margin-top: 1.5rem;
+
+        @media (max-width: $laptop) {
+          width: 60rem;
+        }
+
+        @media (max-width: $tablet) {
+          width: auto;
+        }
+      }
+    }
+
+    &--second {
+      @media (max-width: $tablet) {
+        flex-direction: column;
+        gap: 4rem;
+        margin: 0 0 4rem;
+      }
+
+      @media (max-width: $mobile) {
+        margin: 0 0 5rem;
+      }
+
+    }
+
+    &--bottom {
+      align-items: flex-end;
+      margin-top: -16.8rem;
+
+      @media (max-width: $tablet) {
+        margin-top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5rem;
+      }
+    }
+  }
+
+  &__undeground {
+    margin-bottom: -1rem;
+  }
+
+  &__winter-logo {
+    padding: 1.8rem 3.8rem;
+    border-radius: 19px;
+    background-color: $darkRed;
+
+    @media (max-width: $tablet) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      padding-right: 0;
+    }
+
+    @media (max-width: $mobile) {
+      flex-shrink: 0;
+      padding: 1.2rem 0 1.3rem 1rem;
+      border-radius: 12px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+
+
+      img {
+        width: auto;
+        height: 1.4rem;
+      }
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    bottom: 17rem;
+    right: -0.6rem;
+    user-select: none;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  &__texture {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    user-select: none;
+    pointer-events: none;
+    height: 46rem;
+    width: 100%;
+    background-image: url(../img/texture.png);
+    background-repeat: repeat;
+    background-position: -0.8rem 97.2rem;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    background-size: 95.9rem;
+    z-index: 1;
+
+    @media (max-width: $mobile) {
+      height: 24rem;
+      width: 100%;
+      background-image: url(../img/texture.png);
+      background-repeat: repeat;
+      background-position: -0.5rem 76rem;
+      border-top-left-radius: 19px;
+      border-top-right-radius: 19px;
+      background-size: 38.2rem;
+      z-index: 1;
+    }
+  }
+
+  &__right {
+    width: 62rem;
+    margin-right: -6rem;
+
+
+    @media (max-width: $tablet) {
+      margin-right: 0;
+      width: auto;
+    }
+  }
+
+    &__logos {
+      display: inline-flex;;
+      gap: 3.7rem;
+      background-color: $darkRed;
+      border-radius: 19px;
+      padding: 2rem 2.5rem;
+      margin-left: -1rem;
+
+      .header__logo {
+        background-color: $darkRed;
+      }
+
+      @media (max-width: $tablet) {
+        gap: 0;
+      }
+
+      @media (max-width: $mobile) {
+        .logos__logo {
+          img, svg {
+            height: 1.4rem;
+            width: auto;
+          }
+
+        }
+      }
+
+    }
+
+  &__contacts {
+    display: flex;
+    gap: 7.5rem;
+
+    @media (max-width: $tablet) {
+      gap: 3.5rem;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 5.5rem;
+    }
+
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    line-height: 1.01;
+    text-transform: uppercase;
+    font-family: $mossport;
+    color: $white;
+    gap: 1.5rem;
+
+    @media(max-width: $mobile) {
+      font-size: 2rem;
+      gap: 1rem;
+      img {
+        width: 3rem;
+      }
+
+    }
+  }
+
+  &__emails {
+    margin: 0 0 7rem;
+    h6 {
+      text-transform: uppercase;
+      font-family: $monserrat;
+      font-size: 2rem;
+      margin: 0 0 1.3rem;
+      font-weight: 400;
+
+      @media (max-width: $mobile) {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      margin: 0 0 4rem;
+    }
+  }
+
+  &__email {
+    a {
+      display: block;
+      color: $white;
+      font-size: 3.2rem;
+      font-family: 400px;
+      line-height: normal;
+      font-family: $monserrat;
+      transition: 0.2s ease-in;
+
+      &:hover {
+        color: $red;
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &:not(:last-child) {
+      margin: 0 0 7.5rem;
+
+      @media (max-width: $tablet) {
+        margin: 0 0 3rem;
+      }
+    }
+  }
+
+  &__info {
+    padding-top: 1rem;
+    font-size: 2rem;
+    line-height: 1.1;
+    max-width: 53rem;
+
+    p {
+      margin: 0 0 2rem;
+    }
+
+    li:not(:last-child) {
+      margin: 0 0 2.1rem;
+
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 3rem;
+
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.2rem;
+      max-width: 95%;
+
+      p {
+        margin: 0 0 1rem;
+      }
+
+      ul {
+        padding-left: 1.8rem;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+    margin: 0 0 2rem;
+
+    @media (max-width: $mobile) {
+      margin: 5rem 0 2rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+
+
+  &__policy-link {
+    text-transform: uppercase;
+    color: $white;
+    opacity: 0.4;
+    text-decoration: none;
+    font-size: 1.3rem;
+    line-height: normal;
+    max-width: 27rem;
+
+    &--small {
+      max-width: 26rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.2rem;
+    }
+  }
+}

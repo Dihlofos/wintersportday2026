@@ -1,0 +1,145 @@
+.nav {
+  display: flex;
+
+  &--mobile {
+    display: none;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 0;
+    display: none;
+
+    &--mobile {
+      display: flex;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    bottom: 12rem;
+    right: 0;
+    z-index: 4;
+  }
+
+  &__mobile-toggler {
+    position: fixed;
+    background: none;
+    border: none;
+    top: 2.4rem;
+    right: 1.6rem;
+    z-index: 70;
+    padding: 0;
+  }
+
+  &__wrapper {
+    @media (max-width: $tablet) {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $darkGreen;
+      z-index: 72;
+      padding: 5.5rem 4.3rem 2.7rem 1.6rem;
+
+      .nav.is-active & {
+        display: block;
+      }
+    }
+  }
+
+  &__texture {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    user-select: none;
+    pointer-events: none;
+    height: 27rem;
+    width: 100%;
+    background-image: url(../img/texture.png);
+    background-repeat: repeat;
+    background-position: 0 38.7rem;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    background-size: 38.2rem;
+    z-index: 3;
+  }
+  &__mos-link {
+    font-size: 1.6rem;
+    line-height: 1;
+    border-radius: 6px;
+    width: auto;
+    padding: 0.6rem 1rem;
+    height: auto
+  }
+
+  &__list {
+    position: relative;
+    background-color: $green;
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    padding: 3rem 3.2rem 3.1rem 2.4rem;
+    border-radius: 19px;
+    margin: 0;
+    z-index: 5;
+
+    @media (max-width: $laptop) {
+      gap: 2rem
+    }
+
+    @media (max-width: $tablet) {
+      padding: 0;
+      margin: 0;
+      flex-direction: column;
+      gap: 2.45rem;
+      background: none;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 2.6rem;
+    right: 1.7rem;
+    background: none;
+    border: none;
+    width: 4.1rem;
+    height: 4.1rem;
+    padding: 0;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__link {
+    color: $white;
+    text-decoration: none;
+    transition: 0.2s color ease-in;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: normal;
+
+    @media (max-width: $laptop) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: $tablet) {
+      font-family: $monserrat;
+      font-size: 1.6rem;
+      line-height: 1;
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+}

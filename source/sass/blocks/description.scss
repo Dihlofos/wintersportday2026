@@ -1,0 +1,75 @@
+.description {
+  position: relative;
+
+  &__box {
+    display: flex;
+    position: relative;
+    border-radius: 19px;
+    padding: 15.5rem 0 5.2rem 53.4rem;
+    background-color: $green;
+    overflow: hidden;
+    z-index: 3;
+
+
+  }
+  &__texture {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44rem;
+    height: 100%;
+    background-image: url(..//img/texture-vertical.png);
+    background-size: 56.7rem;
+    background-position: -12.7rem -3.9rem;
+    z-index: 3;
+
+    @media (max-width: $tablet) {
+      top: auto;
+      bottom: 0;
+      height: 27rem;
+      width: 100%;
+      background-image: url(..//img/texture.png);
+      background-repeat: repeat;
+      background-position: 0 38.7rem;
+      border-top-left-radius: 19px;
+      border-top-right-radius: 19px;
+      background-size: 38.2rem;
+    }
+    @media (max-width: $mobile) {
+      height: 16rem;
+      background-position: 17.6rem 16rem;
+      background-size: 34rem;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__content {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    max-width: 39.3rem;
+
+    p {
+      margin: 0 0 3rem;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    z-index: 2;
+
+    &--top-right {
+      top: 0;
+      right: 0;
+    }
+
+    &--bottom-right {
+      bottom: 0;
+      right: 0;
+    }
+
+    &--top {
+      top: 0;
+      left: 13rem;
+    }
+  }
+}

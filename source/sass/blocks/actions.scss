@@ -1,0 +1,114 @@
+.actions {
+  padding: 0 0 12.5rem;
+
+  &__row {
+    position: relative;
+    margin: 0 0 0;
+
+    &--ski {
+      margin: 0 0 10rem;
+    }
+  }
+  &__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 4.5rem;
+    z-index: 2;
+
+
+    @media (max-width: $tablet) {
+      margin: 0 0 3.5rem;
+    }
+
+    @media (max-width: $tablet) {
+      margin: 0 0 4rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+
+    p {
+      margin: 0 0 2rem;
+    }
+  }
+
+  &__image {
+    position: relative;
+    margin-top: -22.2rem;
+    margin-left: -4rem;
+    margin-bottom: -3rem;
+    z-index: 4;
+
+    &--ski {
+      margin-top: -14rem;
+      margin-left: 2rem;
+    }
+
+    &--skate {
+      margin-top: -16.5rem;
+      margin-left: -3.2rem;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+
+    &--top {
+      top: 16rem;
+      left: 0.6rem;
+    }
+
+    &--bottom {
+      top: -17.7rem;
+      left: 0.6rem;
+    }
+  }
+
+  &__time {
+    color: $white;
+    background-color: $red;
+    border-radius: 19px;
+    padding: 1rem 1.5rem;
+    font-size: 5rem;
+    line-height: 1.01;
+  }
+
+  &__text {
+    color: $grey;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    font-weight: 500;
+    max-width: 47.3rem;
+    flex-shrink: 0;
+    margin: 0 0 6rem;
+
+    &--ski {
+      max-width: 54.3rem;
+    }
+
+    &--skate {
+      max-width: 54.3rem;
+    }
+  }
+
+  &__button {
+    border-radius: 20px;
+    font-size: 2.2rem;
+    gap: 0.9rem;
+    line-height: 1.1;
+    padding: 0.9rem 2rem;
+    height: auto;
+    font-family: $monserrat;
+    margin-top: 0.3rem;
+    background-color: $lightGreen;
+  }
+}
