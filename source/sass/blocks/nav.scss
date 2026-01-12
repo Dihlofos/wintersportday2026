@@ -19,6 +19,10 @@
     bottom: 12rem;
     right: 0;
     z-index: 4;
+
+    @media (max-width: $mobile) {
+      bottom: 9.5rem;
+    }
   }
 
   &__mobile-toggler {
@@ -129,6 +133,7 @@
     @media (max-width: $tablet) {
       font-family: $monserrat;
       font-size: 1.6rem;
+      font-weight: 400;
       line-height: 1;
       color: $white;
 

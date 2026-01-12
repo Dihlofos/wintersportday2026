@@ -13,7 +13,7 @@
   }
 
   @media (max-width: $tablet) {
-    padding-bottom: 9.9rem;
+    padding-bottom: 3rem;
   }
 
   .container {
@@ -27,6 +27,10 @@
     font-weight: 500;
     max-width: 90rem;
     margin: 0 0 6rem;
+
+    @media (max-width: $tablet) {
+      font-size: 1.8rem;
+    }
   }
 
   &__button {
@@ -64,6 +68,10 @@
     padding: 1rem 1.5rem;
     font-size: 5rem;
     line-height: 1.01;
+
+    @media (max-width: $tablet) {
+      font-size: 3rem;
+    }
   }
 
   &__slider {

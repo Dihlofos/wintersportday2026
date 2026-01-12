@@ -69,6 +69,7 @@
 
         @media (max-width: $laptop) {
           width: 60rem;
+          margin-top: 0;
         }
 
         @media (max-width: $tablet) {
@@ -194,9 +195,15 @@
         background-color: $darkRed;
       }
 
+
+      @media (max-width: $laptop) {
+        margin-left: -7rem;
+      }
+
       @media (max-width: $tablet) {
         gap: 0;
       }
+
 
       @media (max-width: $mobile) {
         .logos__logo {
@@ -213,6 +220,10 @@
   &__contacts {
     display: flex;
     gap: 7.5rem;
+
+    @media (max-width: $laptop) {
+      gap: 3.5rem;
+    }
 
     @media (max-width: $tablet) {
       gap: 3.5rem;

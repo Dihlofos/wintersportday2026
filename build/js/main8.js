@@ -182,7 +182,7 @@
     modalGoTo.classList.remove("is-hidden");
     const locationNumber = figure.classList[1].split("_")[1];
     const mapOffset =
-      document.getElementById("map").getBoundingClientRect().top +
+      document.getElementById("map-list").getBoundingClientRect().top +
       document.documentElement.scrollTop;
 
     const legendItem = document.querySelector(

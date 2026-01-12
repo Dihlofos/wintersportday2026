@@ -10,6 +10,11 @@
 
     @media (max-width: $mobile) {
       border-radius: 12px;
+      padding: 16rem 0 7rem;
+
+      .container {
+        padding: 0 2.2rem;
+      }
     }
   }
 
@@ -35,9 +40,9 @@
     }
 
     @media (max-width: $mobile) {
-      height: 23rem;
-      background-position: 0px 22.3rem;
-      background-size: 37.5rem;
+      height: 16rem;
+      background-position: -0rem 17.4rem;
+      background-size: 34.4rem;
     }
   }
 
@@ -89,9 +94,13 @@
     width: 25.6rem;
     height: 4.2rem;
     line-height: 1;
+    margin: 3.3rem auto 0;
+    padding: 1rem;
+    width: 23rem;
+    height: 4rem;
 
     @media (max-width: $tablet) {
-      width: 26rem;
+      width: 30rem;
     }
 
     @media (max-width: $mobile) {
@@ -133,6 +142,7 @@
 
     @media (max-width: $mobile) {
       margin: 0 auto 3.5rem;
+      display: none;
     }
 
     &--red {
@@ -177,10 +187,11 @@
     }
 
     @media (max-width: $mobile) {
-      margin: 0 auto 2.8rem;
-      font-size: 4.5rem;
+      font-size: 3.6rem;
       line-height: 1;
-      max-width: 30rem;
+      max-width: 28rem;
+      text-align: left;
+      margin: 1.8rem 0 1.7rem;
     }
   }
 
@@ -225,6 +236,7 @@
     @media (max-width: $mobile) {
       gap: 1.3rem;
       margin: 0 0 4rem;
+      flex-direction: column;
     }
   }
 
@@ -294,12 +306,6 @@
     }
   }
 
-  &__link {
-    margin: 3.3rem auto 0;
-    padding: 1rem;
-    width: 23rem;
-    height: 4rem;
-  }
 
   &__decor {
     position: absolute;

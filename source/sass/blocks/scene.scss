@@ -9,6 +9,10 @@
     border-radius: 19px;
     padding: 3.2rem 33.8rem 2rem 3.1rem;
     overflow: hidden;
+
+    @media (max-width: $tablet) {
+      padding: 3rem 3rem 22rem;
+    }
   }
 
   &__decor {
@@ -34,6 +38,7 @@
   }
 
   &__row {
+    position: relative;
     display: flex;
     align-items: flex-start;
     gap: 3rem;
@@ -46,6 +51,13 @@
 
     &:first-child {
       padding-top: 0;
+    }
+
+    @media (max-width: $tablet) {
+      &.with-button {
+        position: relative;
+        padding: 3rem 0 7.5rem;
+      }
     }
   }
   &__time {
@@ -91,6 +103,13 @@
     padding: 0.8rem 1.9rem;
     height: auto;
     font-family: $monserrat;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+      position: absolute;
+      bottom: 1.8rem;
+      left: 0;
+    }
   }
 
   &__avatar {
@@ -121,14 +140,15 @@
     @media (max-width: $tablet) {
       top: auto;
       bottom: 0;
-      height: 27rem;
+      height: 21rem;
       width: 100%;
       background-image: url(..//img/texture.png);
       background-repeat: repeat;
-      background-position: 0 38.7rem;
+      background-position: 0 20.7rem;
       border-top-left-radius: 19px;
       border-top-right-radius: 19px;
       background-size: 38.2rem;
+      transform: scaleY(-1);
     }
     @media (max-width: $mobile) {
       height: 16rem;

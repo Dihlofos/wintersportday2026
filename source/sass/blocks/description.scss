@@ -10,7 +10,9 @@
     overflow: hidden;
     z-index: 3;
 
-
+    @media (max-width: $tablet) {
+      padding: 2.6rem 2.9rem 18rem;
+    }
   }
   &__texture {
     position: absolute;
@@ -26,14 +28,15 @@
     @media (max-width: $tablet) {
       top: auto;
       bottom: 0;
-      height: 27rem;
+      height: 17rem;
       width: 100%;
       background-image: url(..//img/texture.png);
       background-repeat: repeat;
-      background-position: 0 38.7rem;
+      background-position: 0 16.7rem;
       border-top-left-radius: 19px;
       border-top-right-radius: 19px;
       background-size: 38.2rem;
+      transform: scaleY(-1)
     }
     @media (max-width: $mobile) {
       height: 16rem;
@@ -51,6 +54,10 @@
     p {
       margin: 0 0 3rem;
     }
+
+    @media (max-width: $tablet) {
+      max-width: 56.3rem;
+    }
   }
 
   &__decor {
@@ -60,16 +67,28 @@
     &--top-right {
       top: 0;
       right: 0;
+
+      @media (max-width: $tablet) {
+        right: -10rem;
+      }
     }
 
     &--bottom-right {
       bottom: 0;
       right: 0;
+
+      @media (max-width: $tablet) {
+        display: none;
+      }
     }
 
     &--top {
       top: 0;
       left: 13rem;
+
+      @media (max-width: $tablet) {
+        top: 27rem;
+      }
     }
   }
 }

@@ -47,24 +47,21 @@
      <!-- Yandex.Metrika counter -->
 
     <title>Зимний день Московского спорта — 2 февраля, Лужники</title>
-    <script type="text/javascript" >
-      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      m[i].l=1*new Date();
-      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106218446', 'ym');
 
-      ym(99513593, "init", {
-           clickmap:true,
-           trackLinks:true,
-           accurateTrackBounce:true,
-           webvisor:true
-      });
-   </script>
+      ym(106218446, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    </script>
   </head>
 
   <body>
-    <noscript><div><img src="https://mc.yandex.ru/watch/99513593" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/106218446" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
     <div itemscope style="overflow: hidden">
       <main style="overflow: hidden">
@@ -128,7 +125,7 @@
               </li>
             </ul>
 
-            <img class="nav__decor" src="img/nav/decor.png" alt="" width="255" height="209">
+            <img class="nav__decor" src="img/nav/header-decor.svg" alt="" width="226" height="410">
             <div class="nav__texture"></div>
           </div>
         </nav>
@@ -140,9 +137,21 @@
 
           <div class="header__container container">
             <div class="header__content">
-              <div class="header__logos">
+              <div class="header__logos logos">
                 <a href="https://zima.mos.ru/" class="header__logo" target="_blank">
                   <img src="img/logos/winter-in-moscow.svg" alt="Зима в Москве"  width="80" height="32">
+                </a>
+                <a href="https://www.mos.ru/" class="logos__logo desktop-hidden" target="_blank">
+                  <img src="img/logos/major.svg" width="58" height="29" />
+                </a>
+                <a href="https://www.mos.ru/moskomsport/" class="logos__logo desktop-hidden" target="_blank">
+                  <img src="img/logos/dep.svg" width="85" height="28" />
+                </a>
+                <a href="https://sport.mos.ru/" class="logos__logo desktop-hidden" target="_blank">
+                  <img src="img/logos/mossport.svg" width="80" height="25" />
+                </a>
+                <a href="https://zima-luzhniki.sport.mos.ru/" class="logos__logo desktop-hidden" target="_blank">
+                  <img src="img/logos/luzhnikiwinter.svg" width="73" height="23" />
                 </a>
               </div>
               <nav class="header__nav nav">
@@ -278,7 +287,7 @@
               <div class="map__text">Ключевые локации и&nbsp;время их&nbsp;работы. Планируйте маршрут, двигайтесь между зонами и&nbsp;соберите максимум впечатлений.</div>
             </div>
             <div class="map__map-content">
-              <ul class="map__list js-legend-list">
+              <ul class="map__list js-legend-list" id="map-list">
               </ul>
               <img class="map__mobile-arrows" src="img/icons/arrows-red.svg" width="111" height="23" />
               <div class="map__map-wrapper js-map-scroll">
@@ -337,7 +346,7 @@
               <img class="scene__decor scene__decor--bottom" src="img/scene/decor-bottom.svg" alt=""  width="497" height="184">
               <h2 class="scene__title title title--white" id="scene">Сцена</h2>
               <ul class="scene__list">
-                <li class="scene__row">
+                <li class="scene__row with-button">
                   <div class="scene__time">12:00</div>
                   <div class="scene__avatar">
                     <img src="https://placehold.co/600x400" alt="">
@@ -384,7 +393,7 @@
                     <div class="scene__content-title">Выступление …</div>
                   </div>
                 </li>
-                <li class="scene__row">
+                <li class="scene__row with-button">
                   <div class="scene__time">16:00</div>
                   <div class="scene__content">
                     <div class="scene__content-title">Зумба</div>
@@ -600,7 +609,7 @@
               </h2>
               <div class="actions__content">
                 <div class="actions__text">Горка работает в&nbsp;режиме свободного катания. Можно использовать свое снаряжение или&nbsp;взять ватрушку в&nbsp;пункте проката рядом.</div>
-                <img class="actions__image" src="img/actions/race.png" alt="" width="697" height="697">
+                <img class="actions__image actions__image--tube" src="img/actions/race.png" alt="" width="697" height="697">
               </div>
             </div>
           </div>
@@ -833,7 +842,7 @@
                   <div class="footer__emails">
                     <div class="footer__email">
                       <h6>Для аккредитации СМИ</h6>
-                      <a href="mailto:zimasport2025@yandex.ru">zimasport2025@yandex.ru</a>
+                      <a href="mailto:mossport@greative.pro">mossport@greative.pro</a>
                     </div>
                   </div>
                   <p>Отправьте письмо на электронный адрес со следующей информацией:</p>
@@ -873,13 +882,13 @@
             <div class="footer__row footer__row--policies">
               <div class="footer__left">
                 <div class="footer__links">
-                  <a href="docs/policy.docx" class="footer__policy-link footer__policy-link--small" target="_blank">Политика конфиденциальности</a>
-                  <a href="docs/dms_reject.docx" class="footer__policy-link" target="_blank">Заявление об отказе от претензий участника (взрослый)</a>
+                  <a href="docs/policy.pdf" class="footer__policy-link footer__policy-link--small" target="_blank">Политика конфиденциальности</a>
+                  <a href="docs/dms_reject.pdf" class="footer__policy-link" target="_blank">Заявление об отказе от претензий участника (взрослый)</a>
                 </div>
               </div>
               <div class="footer__right">
                 <div class="footer__links">
-                  <a href="docs/child_reject.docx" class="footer__policy-link" target="_blank">Заявление об отказе от претензий участника (ребенок)</a>
+                  <a href="docs/child_reject.pdf" class="footer__policy-link" target="_blank">Заявление об отказе от претензий участника (ребенок)</a>
                 </div>
               </div>
             </div>

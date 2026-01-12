@@ -34,6 +34,10 @@
     p {
       margin: 0 0 2rem;
     }
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
   }
 
   &__image {
@@ -42,15 +46,39 @@
     margin-left: -4rem;
     margin-bottom: -3rem;
     z-index: 4;
+    width: 69.7rem;
+
+    @media (max-width: $tablet) {
+      align-self: flex-end;
+    }
 
     &--ski {
       margin-top: -14rem;
       margin-left: 2rem;
+      width: 56rem;
     }
 
     &--skate {
       margin-top: -16.5rem;
       margin-left: -3.2rem;
+      width: 58.8rem;
+    }
+
+    &--tube {
+      @media (max-width: $tablet) {
+        margin-left: 14rem;
+
+        margin-left:0;
+        margin-right: 13rem;
+      }
+    }
+
+    @media (max-width: $laptop) {
+      width: 45rem;
+
+      &--tube {
+        margin-top: -15rem;
+      }
     }
   }
 
@@ -65,11 +93,21 @@
     &--top {
       top: 16rem;
       left: 0.6rem;
+
+      @media (max-width: $tablet) {
+        max-width: unset;
+        left: auto;
+        right: -32rem;
+      }
     }
 
     &--bottom {
       top: -17.7rem;
       left: 0.6rem;
+
+      @media (max-width: $tablet) {
+        max-width: unset;
+      }
     }
   }
 
@@ -80,6 +118,10 @@
     padding: 1rem 1.5rem;
     font-size: 5rem;
     line-height: 1.01;
+
+    @media (max-width: $tablet) {
+      font-size: 3rem;
+    }
   }
 
   &__text {

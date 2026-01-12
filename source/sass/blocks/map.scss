@@ -4,7 +4,7 @@
   overflow: hidden;
 
   @media (max-width: $tablet) {
-    padding: 1.6rem 0 17.8rem;
+    padding: 8.5rem 0 8.8rem;
   }
 
   @media (max-width: $mobile) {
@@ -49,7 +49,7 @@
       margin: 0;
       max-width: 107.2rem;
       width: 156%;
-      margin-top: -3.25rem;
+      margin-top: 2rem;
       margin-left: -3.8rem;
     }
 
@@ -347,13 +347,17 @@
       border-radius: 20px;
       padding: 0.8rem 1.9rem;
 
-
       &:after {
         content: '';
         width: 1.3rem;
         height: 1.3rem;
         background-size: cover;
         background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M0.707092 14L13.7071 1M13.7071 1L0.707092 1M13.7071 1L13.7071 14" stroke="white" stroke-width="2"/></svg>');
+      }
+
+      @media (max-width: $tablet) {
+        margin-top: 1rem;
+        font-size: 1.7rem;
       }
     }
 
@@ -384,10 +388,13 @@
     transition: transform all 0.2s ease-in;
     margin: 0 0 4.36rem;
 
+    @media (max-width: $tablet) {
+      font-size: 1.5rem;
+    }
+
     &:hover {
       color: white;
       background-color: $red;
-
     }
   }
 
@@ -397,5 +404,10 @@
     line-height: 1.1;
     font-weight: 500;
     max-width: 79.6rem;
+
+    @media (max-width: $tablet) {
+      font-size: 1.8rem;
+      max-width: 60rem;
+    }
   }
 }
