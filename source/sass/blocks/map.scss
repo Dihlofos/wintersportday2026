@@ -8,7 +8,7 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 1.5rem 0 25.4rem;
+    padding: 8rem 0 25.4rem;
 
     .container {
       padding: 0;
@@ -26,6 +26,13 @@
   &__title {
     margin: 0 0 4.6rem;
 
+    @media (max-width: $mobile) {
+      padding: 0 1.6rem;
+      margin: 0 0 3.4rem;
+    }
+  }
+
+  &__description {
     @media (max-width: $mobile) {
       padding: 0 1.6rem;
     }
@@ -387,6 +394,14 @@
       font-size: 1.5rem;
     }
 
+    @media (max-width: $mobile) {
+      justify-content: center;
+      font-size: 1.4rem;
+      width: 100%;
+      text-align: center;
+      margin: 0 0 2.6rem;
+    }
+
     &:hover {
       color: white;
       background-color: $red;
@@ -403,6 +418,10 @@
     @media (max-width: $tablet) {
       font-size: 1.8rem;
       max-width: 60rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
     }
   }
 }

@@ -13,6 +13,10 @@
     @media (max-width: $tablet) {
       padding: 2.6rem 2.9rem 18rem;
     }
+
+    @media (max-width: $mobile) {
+      padding: 2.6rem 2.9rem 21rem;
+    }
   }
   &__texture {
     position: absolute;
@@ -39,9 +43,9 @@
       transform: scaleY(-1)
     }
     @media (max-width: $mobile) {
-      height: 16rem;
-      background-position: 17.6rem 16rem;
-      background-size: 34rem;
+      height: 19rem;
+      background-position: 17.2rem 20rem;
+      background-size: 34.5rem;
       transform: rotate(180deg);
     }
   }
@@ -57,6 +61,14 @@
 
     @media (max-width: $tablet) {
       max-width: 56.3rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+
+      p {
+            margin: 0 0 1.9rem;
+      }
     }
   }
 
