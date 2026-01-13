@@ -35,15 +35,8 @@
     position: relative;
     width: 131%;
     max-width: 179.6rem;
-    margin-left: 39.6%;
-    margin-top: -6rem;
-
-    @media (max-width: 1680px) {
-      width: 131%;
-      margin-top: 2.4rem;
-      margin-left: 19.8%;
-    }
-
+    margin-left: 39.5%;
+    margin-top: -5.8rem;
 
     @media (max-width: $tablet) {
       margin: 0;
@@ -61,8 +54,8 @@
 
   &__decor {
     position: absolute;
-    bottom: 0;
-    left: 50%;
+    bottom: -2.6rem;
+    left: 51.4%;
     transform: translateX(-50%);
   }
 
@@ -298,7 +291,7 @@
     text-transform: uppercase;
     margin: 0;
     cursor: pointer;
-    height: 15rem;
+    min-height: 15rem;
     background-color: $darkGreen;
     border-radius: 19px;
 
@@ -330,6 +323,7 @@
       position: relative;
       display: flex;
       gap: 1.8rem;
+      max-width: 80%;
     }
 
     a {
@@ -346,6 +340,7 @@
       background-color: $red;
       border-radius: 20px;
       padding: 0.8rem 1.9rem;
+      margin-top: 1.8rem;
 
       &:after {
         content: '';

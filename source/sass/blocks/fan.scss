@@ -1,8 +1,8 @@
-.attractions {
+.fan {
   position: relative;
   width: 100%;
   overflow: visible;
-  padding: 13rem 0 1.2rem;
+  padding: 3rem 0 1.2rem;
 
   .opacity-hidden {
     opacity: 0;
@@ -26,7 +26,7 @@
     line-height: 1.1;
     font-weight: 500;
     max-width: 90rem;
-    margin: 0 0 6rem;
+    margin: 0 0 7rem;
 
     @media (max-width: $tablet) {
       font-size: 1.8rem;
@@ -42,7 +42,7 @@
     height: auto;
     width: 100%;
     font-family: $monserrat;
-    margin-top: 2.3rem;
+    margin-top: 2.8rem;
   }
 
   &__title {
@@ -50,7 +50,6 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 0 4.5rem;
-
 
     @media (max-width: $tablet) {
       margin: 0 0 3.5rem;
@@ -77,7 +76,7 @@
   &__slider {
     position: relative;
     overflow: visible;
-    margin: 0 0 12.1rem;
+    margin: 0 0 16.1rem;
 
     @media (max-width: $tablet) {
       padding-top: 4.2rem;
@@ -139,25 +138,15 @@
     }
   }
 
-  &__slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: auto;
-    background-color: $red;
-    min-height: 100%;
-    height: auto;
-    border-radius: 19px;
-    padding: 3.5rem 3.1rem 4rem 3rem;
-
-    @media (max-width: $tablet) {
-      padding: 2.1rem 1.6rem 2.1rem 1.7rem;
-      border-radius: 12px;
-    }
+  &__slide-image {
+    width: 100%;
+    height: 29.9rem;
 
     img {
       display: block;
-      border-radius: 19px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       margin: 0 0 3rem;
 
       @media (max-width: $tablet) {
@@ -172,6 +161,25 @@
         margin: 0 0 1rem;
       }
     }
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    background-color: $red;
+    min-height: 100%;
+    height: auto;
+    border-radius: 19px;
+    padding: 3.5rem 3.1rem 3.1rem 3rem;
+
+    @media (max-width: $tablet) {
+      padding: 2.1rem 1.6rem 2.1rem 1.7rem;
+      border-radius: 12px;
+    }
+
+
 
     p {
       font-size: 2rem;
@@ -232,10 +240,21 @@
     }
   }
 
+  &__slide-time {
+    color: $white;
+    font-family: $mossport;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 1.01;
+    margin: 2.9rem 0 0rem;
+  }
+
   &__decor {
     position: absolute;
-    top: 23.2rem;
-    right: -3rem;
+    top: 22.9rem;
+    right: -0.7rem;
     z-index: 1;
   }
+
+
 }
