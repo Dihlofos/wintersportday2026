@@ -17,12 +17,12 @@
     1: {
       title: "Биатлонная трасса",
       time: "08:00–15:30",
-      link: "#race",
+      link: "#ski",
     },
     2: {
       title: "Горка для тюбинга",
       time: "11:00–21:00",
-      link: "#tubing",
+      link: "#downhill",
     },
     3: {
       title: "Каток",
@@ -32,7 +32,7 @@
     4: {
       title: "ЗИМНИЕ АТТРАКЦИОНЫ, ФАН-ВСТРЕЧИ, СЦЕНА",
       time: "Время",
-      link: "#winter",
+      link: "#scene",
     },
   };
 
@@ -94,7 +94,7 @@
     });
   }
 
-  function onFigureClick(figure) {
+  function onFigureClick(figure, event) {
     modalGoTo.classList.remove("is-hidden");
     const locationNumber = figure.classList[1].split("_")[1];
     const mapOffset =
@@ -105,8 +105,18 @@
       `.js-legend-item[data-legend-item-id="${locationNumber}"]`
     );
 
+    const clickOnJsScroll = event?.target?.classList.contains("js-scroll");
     modalGoTo.href = links[locationNumber];
-    window.scroll.animateScroll(mapOffset);
+
+    if (!clickOnJsScroll) {
+      window.scroll.animateScroll(mapOffset);
+    }
+
+    if (clickOnJsScroll) {
+      resetFigures();
+      resetLegends();
+      return;
+    }
 
     if (figure.classList.contains("is-active")) {
       resetFigures();
@@ -170,8 +180,8 @@
       itemLi.dataset["legendItemId"] = index;
       itemLink.classList.add("js-scroll");
 
-      itemLi.addEventListener("click", function () {
-        onFigureClick(figure);
+      itemLi.addEventListener("click", function (event) {
+        onFigureClick(figure, event);
       });
 
       itemSpan.textContent = `${index}.`;
