@@ -1,8 +1,5 @@
 "use strict";
 (function () {
-  const contentsEls = document.querySelectorAll(".js-content");
-  const thumbs = document.querySelectorAll(".js-thumb");
-
   const map = document.querySelector(".js-map");
   const mapScroller = document.querySelector(".js-map-scroll");
   const mapModal = document.querySelector(".js-map-modal");
@@ -10,6 +7,7 @@
   const modalGoTo = mapModal.querySelector(".js-map-modal-goto");
   const modalClose = mapModal.querySelector(".js-map-modal-close");
   const bullitItems = document.querySelectorAll(".js-bullit");
+  const vw = window.innerWidth;
 
   const figures = map.querySelectorAll(".figure");
 
@@ -45,7 +43,7 @@
   };
 
   setTimeout(() => {
-    mapScroller?.scroll({ left: 150 });
+    mapScroller?.scroll({ left: 135 });
   }, 500);
 
   figures.forEach((figure) => {
@@ -97,9 +95,11 @@
   function onFigureClick(figure, event) {
     modalGoTo.classList.remove("is-hidden");
     const locationNumber = figure.classList[1].split("_")[1];
-    const mapOffset =
-      document.getElementById("map-list").getBoundingClientRect().top +
-      document.documentElement.scrollTop;
+    let idList = vw < 768 ? `legend-item-${locationNumber}` : "map-list";
+    let mapOffset =
+      document.getElementById(idList).getBoundingClientRect().top +
+      document.documentElement.scrollTop -
+      100;
 
     const legendItem = document.querySelector(
       `.js-legend-item[data-legend-item-id="${locationNumber}"]`
@@ -178,6 +178,7 @@
       itemLi.classList.add("map__list-item");
       itemLi.classList.add("js-legend-item");
       itemLi.dataset["legendItemId"] = index;
+      itemLi.id = `legend-item-${index}`;
       itemLink.classList.add("js-scroll");
 
       itemLi.addEventListener("click", function (event) {

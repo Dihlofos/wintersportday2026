@@ -16,14 +16,14 @@
     z-index: 5;
 
     @media (max-width: $mobile) {
-      height: 14rem;
+      height: 17rem;
       width: 100%;
       background-image: url(../img/texture.png);
       background-repeat: repeat;
-      background-position: -0.4rem 36rem;
+      background-position: -0.2rem 34.7rem;
       border-top-left-radius: 19px;
       border-top-right-radius: 19px;
-      background-size: 35.2rem;
+      background-size: 34.6rem;
     }
   }
 
@@ -35,7 +35,7 @@
     margin: 0 0 7.7rem;
 
     @media (max-width: $mobile) {
-      margin: 0 0 2.4rem;
+      margin: 0 0 4.6rem;
     }
   }
 
@@ -53,7 +53,7 @@
 
     @media (max-width: $mobile) {
       border-radius: 12px;
-      padding: 2.4rem 1.7rem 14.8rem 2.3rem;
+      padding: 2.4rem 1.7rem 21.2rem 2.3rem;
     }
 
   }
@@ -69,10 +69,10 @@
 
     @media (max-width: $mobile) {
       padding: 0;
-      gap: 2rem;
+      gap: 3rem;
 
       &__logo {
-        width: 32%;
+        width: 35%;
       }
 
     }
@@ -82,16 +82,27 @@
 
   &__decor {
     position: absolute;
-    z-index: 2;
+    user-select: none;
+    pointer-events: none;
+
 
     &--top {
       top: 0rem;
       right: 0rem;
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
     }
 
     &--bottom {
       bottom: 2.8rem;
       left: 0rem;
+
+      @media (max-width: $mobile) {
+        bottom: -1.2rem;
+        left: -9.5rem;
+      }
     }
   }
 

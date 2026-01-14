@@ -19,4 +19,18 @@
       prevEl: ".js-main-prev-concert",
     },
   });
+
+  new Swiper(`.js-main-slider-fan`, {
+    // Optional parameters
+    slidesPerView: vw > 1024 ? 3 : 1,
+    spaceBetween: 40,
+    initialSlide: 0,
+    draggable: false,
+    pagination: false,
+    loop: true,
+    navigation: {
+      nextEl: ".js-main-next-fan",
+      prevEl: ".js-main-prev-fan",
+    },
+  });
 })();

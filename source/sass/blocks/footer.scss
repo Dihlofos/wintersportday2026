@@ -3,11 +3,10 @@
   font-family: $monserrat;
 
   @media (max-width: $mobile) {
-    padding: 4.4rem 0 22.1rem;
+    padding: 4.4rem 0 28rem;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     overflow: hidden;
-
   }
 
   .container {
@@ -46,6 +45,10 @@
     @media (max-width: $tablet) {
       margin: 1rem 0 0;
     }
+
+    @media (max-width: $mobile) {
+      margin: 1rem 0 3.4rem;
+    }
   }
 
   &__row {
@@ -55,6 +58,11 @@
 
     &--policies {
       margin-top: -4.9rem;
+
+      @media (max-width: $mobile) {
+        flex-direction: column;
+         gap: 1rem;
+      }
     }
 
     &--title {
@@ -62,6 +70,11 @@
 
       @media (max-width: $tablet) {
         margin: 0 0 5rem;
+      }
+
+      @media (max-width: $mobile) {
+        flex-direction: column;
+        margin: 0 0 4rem;
       }
 
       .footer__right {
@@ -75,6 +88,10 @@
         @media (max-width: $tablet) {
           width: auto;
         }
+
+        @media (max-width: $mobile) {
+          width: 100%;
+        }
       }
     }
 
@@ -86,7 +103,8 @@
       }
 
       @media (max-width: $mobile) {
-        margin: 0 0 5rem;
+        margin: 0 0 3rem;
+        gap: 3rem;
       }
 
     }
@@ -181,6 +199,10 @@
       margin-right: 0;
       width: auto;
     }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
   }
 
     &__logos {
@@ -204,11 +226,18 @@
         gap: 0;
       }
 
-
       @media (max-width: $mobile) {
+        margin-left: 0;
+        width: 100%;
+        border-radius: 12px;
+        padding: 1.6rem 1.5rem;
+        gap: 2rem;
+        background-color: $red;
+        justify-content: space-between;
+
         .logos__logo {
           img, svg {
-            height: 1.4rem;
+            height: 2rem;
             width: auto;
           }
 
@@ -266,6 +295,7 @@
 
       @media (max-width: $mobile) {
         font-size: 1.2rem;
+        margin: 0 0 0.6rem;
       }
     }
 
@@ -289,7 +319,7 @@
       }
 
       @media (max-width: $mobile) {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
       }
     }
 
@@ -324,7 +354,7 @@
     }
 
     @media (max-width: $mobile) {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       max-width: 95%;
 
       p {
@@ -352,6 +382,11 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @media(max-width: $mobile) {
+      flex-direction: column;
+      gap: 1rem;
+    }
 
   }
 

@@ -1,12 +1,20 @@
 .actions {
   padding: 0 0 12.5rem;
 
+  @media (max-width: $mobile) {
+    padding: 0 0 5.5rem;
+  }
+
   &__row {
     position: relative;
     margin: 0 0 0;
 
     &--ski {
       margin: 0 0 10rem;
+
+      @media (max-width: $mobile) {
+        margin: 4.1rem 0 6.9rem;
+      }
     }
   }
   &__title {
@@ -15,15 +23,17 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 0 4.5rem;
-    z-index: 2;
+    z-index: 5;
 
 
     @media (max-width: $tablet) {
       margin: 0 0 3.5rem;
     }
 
-    @media (max-width: $tablet) {
-      margin: 0 0 4rem;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 0 2rem;
     }
   }
 
@@ -48,6 +58,14 @@
     z-index: 4;
     width: 69.7rem;
 
+    @media (max-width: $laptop) {
+      width: 45rem;
+
+      &--tube {
+        margin-top: -15rem;
+      }
+    }
+
     @media (max-width: $tablet) {
       align-self: flex-end;
     }
@@ -56,30 +74,41 @@
       margin-top: -14rem;
       margin-left: 2rem;
       width: 56rem;
+
+      @media (max-width: $mobile) {
+        width: 32.6rem;
+        margin-right: -11.7rem;
+        margin-top: -16.9rem;
+      }
     }
 
     &--skate {
       margin-top: -16.5rem;
       margin-left: -3.2rem;
       width: 58.8rem;
+
+      @media (max-width: $mobile) {
+        width: 27.2rem;
+        margin-right: -7rem;
+        margin-top: -10.9rem;
+      }
     }
 
     &--tube {
       @media (max-width: $tablet) {
         margin-left: 14rem;
-
         margin-left:0;
         margin-right: 13rem;
       }
-    }
 
-    @media (max-width: $laptop) {
-      width: 45rem;
-
-      &--tube {
-        margin-top: -15rem;
+      @media (max-width: $mobile) {
+        width: 28.8rem;
+        margin-right: -0.8rem;
+        margin-top: -9.1rem;
       }
     }
+
+
   }
 
   &__decor {
@@ -99,6 +128,11 @@
         left: auto;
         right: -32rem;
       }
+
+      @media (max-width: $mobile) {
+        right: -19rem;
+        top: 23rem;
+      }
     }
 
     &--bottom {
@@ -108,19 +142,35 @@
       @media (max-width: $tablet) {
         max-width: unset;
       }
+
+      @media (max-width: $mobile) {
+        top: -36.7rem;
+        left: -152rem;
+      }
     }
   }
 
   &__time {
+    position: relative;
     color: $white;
     background-color: $red;
     border-radius: 19px;
     padding: 1rem 1.5rem;
     font-size: 5rem;
     line-height: 1.01;
+    z-index: 5;
 
     @media (max-width: $tablet) {
       font-size: 3rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 3.6rem;
+      width: 100%;
+      padding: 0.5rem 1.5rem;
+      text-align: center;
+      margin-top: 2.9rem;
+      border-radius: 12px;
     }
   }
 
@@ -140,6 +190,18 @@
     &--skate {
       max-width: 54.3rem;
     }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+      line-height: 1.1;
+
+      &--ski {
+        max-width: 28rem;
+        p {
+          margin: 0 0 2.7rem;
+        }
+      };
+    }
   }
 
   &__button {
@@ -152,5 +214,12 @@
     font-family: $monserrat;
     margin-top: 0.3rem;
     background-color: $lightGreen;
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+      line-height: 1.1;
+      width: 19.7rem;
+      padding: 0.7rem 2rem;
+    }
   }
 }
