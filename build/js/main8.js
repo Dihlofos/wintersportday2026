@@ -92,7 +92,7 @@
 
   const locations = {
     1: {
-      title: "Биатлонная трасса",
+      title: "Лыжно-биатлонная трасса",
       time: "08:00–15:30",
       link: "#ski",
     },
@@ -102,7 +102,7 @@
       link: "#downhill",
     },
     3: {
-      title: "Каток",
+      title: "День студентана катке Южный",
       time: "Время",
       link: "#skate",
     },
@@ -285,7 +285,7 @@
     const clone = parentSelector.innerHTML;
     const firstElement = parentSelector.children[0];
     let i = 0;
-    console.log(firstElement);
+
     parentSelector.insertAdjacentHTML("beforeend", clone);
     parentSelector.insertAdjacentHTML("beforeend", clone);
 
@@ -338,8 +338,6 @@
   const slider = document.querySelector(".js-main-slider-container");
   const vw = window.innerWidth;
   const wrapper = slider.querySelector(".swiper-wrapper");
-
-  console.log("warpper", slider);
 
   new Swiper(`.js-main-slider-concert`, {
     // Optional parameters

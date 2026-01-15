@@ -4,8 +4,6 @@
   const vw = window.innerWidth;
   const wrapper = slider.querySelector(".swiper-wrapper");
 
-  console.log("warpper", slider);
-
   new Swiper(`.js-main-slider-concert`, {
     // Optional parameters
     slidesPerView: vw > 1024 ? 3 : 1,
