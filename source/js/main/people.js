@@ -25,7 +25,7 @@
     initialSlide: 0,
     draggable: false,
     pagination: false,
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".js-main-next-fan",
       prevEl: ".js-main-prev-fan",
