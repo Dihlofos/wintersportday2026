@@ -102,7 +102,7 @@
       100;
 
     const legendItem = document.querySelector(
-      `.js-legend-item[data-legend-item-id="${locationNumber}"]`
+      `.js-legend-item[data-legend-item-id="${locationNumber}"]`,
     );
 
     const clickOnJsScroll = event?.target?.classList.contains("js-scroll");
